@@ -1,0 +1,288 @@
+{% extends "app/base1.html" %}
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="{% static '/https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/assets/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+	<link rel="stylesheet" href="{% static '/assets/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static '/https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' %}">
+</head>
+<body>
+
+    <!-- Loader -->
+  <div id="preloader ">
+    <div id="status">
+      <div class="spinner">
+            <div class="double bounce1"> </div>
+            <div class="double bounce2"></div>
+      </div>
+    </div>
+ </div>
+    <!-- Loader -->
+        <div class="back-to-home rounded d-none d-sm-block">
+            <a href="#" class="text-white rounded d-inline-block text-center"> </a>
+        </div>
+        
+        <!-- hero start here  -->
+        <section class="vh-100")>
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <div class="login-page bg-white shadow rounded p-4">
+                                    <div class="mb-4">
+                                        <h4 class="text-dark md-4"> Update your profile </h4>
+
+                                    </div>
+
+                                    <form class="login-form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">First Name<span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control resume" placeholder="First Name" name="firstname" required="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2 ">
+                                                    <label class="text-muted">Last Name<span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control resume" placeholder="Last Name" name="lastname" required="">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3 w-50">
+                                                <div class="form-group app-label mt-2 ">
+                                                    <label class="text-muted">Job Type<span class="text-danger">*</span></label>
+                                                    <div class="form button">
+                                                        <select class=" nice-select rounded w-100" aria-label="Default select example">
+                                                            <option data-display="Job Type"></option>
+                                                            <option value="1">Web Developer</option>
+                                                            <option value="2">PHP Developer</option>
+                                                            <option value="3">Web Designer</option>
+                                                            <option value="4">Graphic Designer</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Job Category<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Job Category"></option>
+                                                            <option value="1">Web Developer</option>
+                                                            <option value="2">PHP Developer</option>
+                                                            <option value="3">Web Designer</option>
+                                                            <option value="4">Graphic Designer</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label ">
+                                                    <label class="text-muted">Country<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Country" ></option>
+                                                            <option value="1">India</option>
+                                                            <option value="2">China</option>
+                                                            <option value="3">United States</option>
+                                                            <option value="4">Indonesia</option>
+                                                            <option value="5">Pakistan</option>
+                                                            <option value="6">Brazil</option>
+                                                            <option value="7">Nigeria</option>
+                                                            <option value="8">Bangladesh</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label">
+                                                    <label class="text-muted">City<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="City" ></option>
+                                                            <option value="1">Mumbai</option>
+                                                            <option value="2">Delhi</option>
+                                                            <option value="3">Bangalore</option>
+                                                            <option value="4">hydrerabad</option>
+                                                            <option value="5">Ahemdabad</option>
+                                                            <option value="6">Chennai</option>
+                                                            <option value="7">Kolkata</option>
+                                                            <option value="8">Surat</option>
+                                                            <option value="9">Pune</option>
+                                                            <option value="10">Jaipur</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Minimum Salary<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Select"></option>
+                                                            <option value="1">1.5 Lakh</option>
+                                                            <option value="2">2 Lakh</option>
+                                                            <option value="3">2.5 Lakh</option>
+                                                            <option value="4">3 Lakh</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Maximum Salary<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Select"></option>
+                                                            <option value="1">4 Lakh</option>
+                                                            <option value="2">5 Lakh</option>
+                                                            <option value="3">6 Lakh</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Education Level<span class="text-danger" aria-required="true">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Level"></option>
+                                                            <option value="1">Graduation</option>
+                                                            <option value="2">Post Graduation</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Year of Experience<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Experience"></option>
+                                                            <option value="1">0-1</option>
+                                                            <option value="2">2-3</option>
+                                                            <option value="3">4-5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-12 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Website</label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Website"></option>
+                                                            <option value="1">your website</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Email Address <span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control resume"placeholder="Email Address" name="email" required="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Phone Number<span class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control resume" placeholder="Phone Number" name="contact" required="">
+                                                </div>
+                                            </div>
+
+ 
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Gender<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Select"></option>
+                                                            <option value="1">Male</option>
+                                                            <option value="2">Female</option>
+                                                            <option value="3">Other</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group app-label mt-2">
+                                                    <label class="text-muted">Shift<span class="text-danger">*</span></label>
+                                                    <div class="form-button">
+                                                        <select class="nice-select rounded w-100">
+                                                            <option data-display="Select"></option>
+                                                            <option value="1">Day</option>
+                                                            <option value="2">Night</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="custom-file col-md-6 mt-4">
+                                                <label class="custom-file-label col-md-8" for="customInput">Upload Files</label>
+                                                <input type="file" class="custom-file-input" id="customInput" required>
+                                            </div>
+
+                                            <div>
+                                                <button class="btn btn-sm rounded  mt-4 p -4" type="submit">Submit</button>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}
+            </div>
+        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="row align-items-center justify-content-xl-between">
+      <div class="col-xl-10 m-auto text-center">
+       
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
